@@ -1,0 +1,24 @@
+# User Story: Testimonial Aggregation
+
+## Title
+As a marketer, I want to aggregate testimonials from multiple sources, so I can centralize feedback for asset creation.
+
+## Description
+Marketers need to collect testimonials from X, Google Reviews, and surveys without manual copy-pasting. This feature allows users to connect APIs or upload CSVs, view testimonials in a dashboard, and filter them by source or sentiment.
+
+## Acceptance Criteria
+- Given I have an X or Google Reviews account, I can connect it via API to pull testimonials automatically.
+- Given I have a CSV file with fields (`customer_name`, `testimonial_text`, `source`, `date`), I can upload it to import testimonials.
+- Given I am on the dashboard, I can view a table of all testimonials with columns: Customer Name, Text, Source, Date, Sentiment (Positive/Negative/Neutral).
+- Given I want to find specific testimonials, I can filter by source (e.g., X) or sentiment (e.g., Positive) and sort by date.
+- Given I upload an invalid CSV (e.g., missing fields), I receive an error message with guidance to fix it.
+
+
+## Assumptions
+- Users have access to X/Google Reviews APIs or valid CSV exports.
+- Sentiment analysis uses a basic AI model to categorize testimonials.
+
+## Dependencies
+- API integrations with X and Google My Business.
+- Backend support for CSV parsing and validation.
+
